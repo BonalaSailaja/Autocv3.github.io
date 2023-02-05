@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="left">
+            <form>
+                <label for="">Name : </label>
+                <input id="name" type="text" placeholder="name" value=""><br>
+                <label for="">Email : </label>
+                <input id="email" type="text" placeholder="email" value=""><br>
+                <label for="">Phone : </label>
+                <input id="phone" type="text" placeholder="phone" value=""><br>
+                <label for="">Github : </label>
+                <input id="github" type="text" placeholder="github" value=""><br>
+                <label for="">Linkedin : </label>
+                <input id="Linkedin" type="text" placeholder="Linkedin" value=""><br>
+                <fieldset>
+                    <legend>Education</legend>
+                    <label>Degree : </label>
+                    <input type="text"  id="Degree"  placeholder="Degree" value=""/><br/>
+                    <label>College : </label>
+                    <input type="text"  id="College"  placeholder="College" value="" /><br/>
+                    <label>Starting Year : </label>
+                    <input type="text"  id="StartingYear"  placeholder="StartingYear" value=""/><br/>
+                    <label>Passing Year : </label>
+                    <input type="text"  id="PassingYear"  placeholder="PassingYear" value=""/><br/>
+                    <label>CGPA : </label>
+                    <input id="CGPA" type="text" placeholder="  CGPA" value=""><br/>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label>Skills:</label>
+                    <textarea name="" id="Skills" cols="20" rows="4" placeholder="Skills eg:HTML , CSS" value='' ></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Projects</legend>
+                    <label>Project : </label>
+                    <input id="Project" type="text" placeholder="  project" value=""><br/>
+                    <label>Description : </label>
+                    <textarea name="" id="Description" cols="20" rows="4" placeholder="Write in HTML format" value=''></textarea><br/>
+                    <label>Link : </label>
+                    <input id="Link" type="text" placeholder="  link" value=""><br/>
+                    <!-- Project , Description , Link -->
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <label>Company : </label>
+                    <input id="Company" type="text" placeholder="  Company" value=""><br/>
+                    <label>Designation : </label>
+                    <input id="Designation" type="text" placeholder="  Designation" value=""><br/>
+                    <label>Duration : </label>
+                    <input id="Duration" type="text" placeholder="-/-/-" value=""><br/>
+                    <label>Description : </label>
+                    <textarea name="" id="Description1" cols="20" rows="4" placeholder="Write in HTML format" value=''></textarea>
+                    <!-- Company , Designation , Duration , Description -->
+                </fieldset>
+                <button type="submit" class="btn" onclick="handleSubmit()">submit</button>
+                <button type="reset" class="btn">reset</button>
+                
+                <button class="btn" onclick="handleLeft()">View & Print</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="block1">
+                <p id='name_resume'></p><br/>
+                <p id='email_resume'></p>
+                <p id='github_resume'></p>
+                <p id='Linkedin_resume'></p>
+                <!--Email , Phone , Github , Linkedin  -->
+            </div>
+            <div class="block2">
+                <h2>Education</h2>
+                <p id='Degree_resume'></p><br/>
+                <p id='College_resume'></p><br/>
+                <p id='StartingYear_resume'></p><br/>
+                <p id='PassingYear_resume'></p><br/>
+                <p id='CGPA_resume'></p><br/>
+            </div>
+            <div class="block3">
+                <h2>Skills</h2>
+                <p id='Skills_resume'></p><br/>
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+                <p id='Project_resume'></p><br/>
+                <p id='Description_resume'></p><br/>
+                <p id='Link_resume'></p><br/>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+                <p id='Company_resume'></p><br/>
+                <p id='Designation_resume'></p><br/>
+                <p id='Duration_resume'></p><br/>
+                <p id='Description1_resume'></p><br/>
+            </div>
+            <button type='print' class="btn print" onclick="handlePrint()">Print</button>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
