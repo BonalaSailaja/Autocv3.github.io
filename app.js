@@ -35,6 +35,7 @@ function handleSubmit(e) {
     name_resume.innerHTML = name.value;
     document.getElementById("name_resume").style.fontSize='30px';
     document.getElementById("name_resume").style.color='gray';
+    
     const email_resume = document.getElementById("email_resume");
     email_resume.innerHTML = email.value;
     document.getElementById("email_resume").style.color='blue';
