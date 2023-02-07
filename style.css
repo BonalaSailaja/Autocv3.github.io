@@ -11,7 +11,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    height: 100vh; 
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -101,8 +101,8 @@ main>.right>.block2{
     justify-content:left;
     align-items: left;
     flex-direction: column;
-    color: gray;
-    width: 60vw;
+    color:black;
+ 
    
 }
 h2{
